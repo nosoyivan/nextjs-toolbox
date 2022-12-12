@@ -33,8 +33,15 @@ export default function FeedbackForm() {
           <option value="email">Email</option>
         </select>
 
-        <label htmlFor="services">How can we help?</label>
-        <textarea id="services" className={styles['form-field']} wrap="soft" name="services" required></textarea>
+        <label htmlFor="services">Service needs</label>
+        <select id="services" className={styles['form-field']} type="text" name="services" required >
+          <option value="Gas">Gas</option>
+          <option value="Electric">Electric</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label htmlFor="servicesinfo">How can we help?</label>
+        <textarea id="servicesinfo" className={styles['form-field']} wrap="soft" name="servicesinfo" required></textarea>
         <button className={styles.button} type="submit">Submit</button>
       </form>
   )
