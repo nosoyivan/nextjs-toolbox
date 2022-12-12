@@ -26,8 +26,8 @@ export default function FeedbackForm() {
         <label htmlFor="email">Email</label>
         <input id="email" className={styles['form-field']} type="email" name="email" required />
 
-        <label htmlFor="bestway">Best Way to conact</label>
-        <select id="bestway" className={styles['form-field']} type="email" name="email" required >
+        <label htmlFor="reachout">Best Way to conact</label>
+        <select id="reachout" className={styles['form-field']} type="text" name="Reachout" required >
           <option value="call">Call</option>
           <option value="text">Text</option>
           <option value="email">Email</option>
